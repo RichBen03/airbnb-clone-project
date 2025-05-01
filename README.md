@@ -12,15 +12,21 @@ This project aims to develop a backend system that mimics the core functionaliti
 - **Data Optimization**: The projct also covers indexing and caching for database optimization performance.
 
 ## ⚙️ Technology Stack
-- **Backend Framework**: Django, Django REST Framework for creating RESTFUL APIs.
-- **Database**: MYSQL for  the Database.
-- **Querying**: GraphQL for querying data from the Database.
-- **Asynchronous Tasks**: Celery for handing asychronous tasks such as payments, message queueing and sending notifications to customers.
-- **Caching**: Makes use of Redis for session storage and caching of frequently accessed data.
-- **Containerization**: Docker
-- **CI/CD**: GitHub Actions 
 
-...
+This project leverages a modern backend technology stack to deliver a scalable, secure, and high-performance application.
+
+| Technology       | Purpose |
+|------------------|---------|
+| **Django**       | A high-level Python web framework used for rapid backend development, including URL routing, middleware, and ORM integration. |
+| **Django REST Framework (DRF)** | An extension of Django that simplifies building and managing RESTful APIs for CRUD operations. |
+| **PostgreSQL**   | A powerful open-source relational database used to store structured data such as users, properties, bookings, and payments. |
+| **GraphQL**      | A flexible query language that allows clients to request exactly the data they need, reducing over-fetching and under-fetching issues. |
+| **Celery**       | A task queue system used to run asynchronous tasks in the background, such as sending emails and processing payments. |
+| **Redis**        | An in-memory data store used for caching, improving response times and reducing database load, as well as managing Celery task queues. |
+| **Docker**       | A containerization tool that packages the application and its dependencies to ensure consistent development and deployment environments. |
+| **GitHub Actions / CI/CD** | Used to automate testing, linting, and deployment pipelines, ensuring continuous integration and delivery. |
+
+
 
 ## 👥 Team Roles
 
