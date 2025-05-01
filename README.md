@@ -129,7 +129,7 @@ Represents feedback left by users after a stay.
 - A **Review** can only be posted by a **User** who completed a **Booking** for that **Property** (`many-to-1 conditional`)  
   ↳ Helps enforce authenticity in feedback.
 
-  ### 🧩 Feature Breakdown
+ ### 🧩 Feature Breakdown
 
 - **User Management**  
   Enables users to register, log in, and manage their profiles. This includes secure authentication and role-based access(customer/host), ensuring a personalized and secure user experience.
@@ -153,7 +153,6 @@ Represents feedback left by users after a stay.
   Indexing and caching mechanisms improve data retrieval speed and reduce server load, ensuring a smooth user experience even under high traffic.
 
 ---
-
 ### 🔐 API Security
 
 - **Authentication & Authorization**  
