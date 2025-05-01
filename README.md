@@ -11,6 +11,9 @@ This project aims to develop a backend system that mimics the core functionaliti
 - **Review System**: Enables ratings and feedback for properties from customera.
 - **Data Optimization**: The projct also covers indexing and caching for database optimization performance.
 
+---
+
+
 ## ⚙️ Technology Stack
 
 This project leverages a modern backend technology stack to deliver a scalable, secure, and high-performance application.
@@ -26,6 +29,7 @@ This project leverages a modern backend technology stack to deliver a scalable, 
 | **Docker**       | A containerization tool that packages the application and its dependencies to ensure consistent development and deployment environments. |
 | **GitHub Actions / CI/CD** | Used to automate testing, linting, and deployment pipelines, ensuring continuous integration and delivery. |
 
+---
 
 
 ## 👥 Team Roles
@@ -49,6 +53,10 @@ Prepares and maintains accurate API documentation using OpenAPI and GraphQL stan
 
 ### 📢 Project Manager 
 Coordinates team tasks, timelines, and deliverables. He/she also manages collaboration through tools like GitHub Projects and ensures alignment with project goals and timelines.
+
+
+---
+
 
 ## 🗄️ Database Design
 
@@ -128,6 +136,10 @@ Represents feedback left by users after a stay.
 
 - A **Review** can only be posted by a **User** who completed a **Booking** for that **Property** (`many-to-1 conditional`)  
   ↳ Helps enforce authenticity in feedback.
+  
+
+  ---
+
 
  ### 🧩 Feature Breakdown
 
@@ -153,6 +165,7 @@ Represents feedback left by users after a stay.
   Indexing and caching mechanisms improve data retrieval speed and reduce server load, ensuring a smooth user experience even under high traffic.
 
 ---
+
 ### 🔐 API Security
 
 - **Authentication & Authorization**  
