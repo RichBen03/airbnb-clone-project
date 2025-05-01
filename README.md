@@ -129,3 +129,62 @@ Represents feedback left by users after a stay.
 - A **Review** can only be posted by a **User** who completed a **Booking** for that **Property** (`many-to-1 conditional`)  
   ↳ Helps enforce authenticity in feedback.
 
+  ### 🧩 Feature Breakdown
+
+- **User Management**  
+  Enables users to register, log in, and manage their profiles. This includes secure authentication and role-based access(customer/host), ensuring a personalized and secure user experience.
+
+- **Property Management**  
+  Hosts can create, read, update, and delete property listings with detailed descriptions and media. This system makes it easy to manage availability, pricing, and property features.
+
+- **Booking System**  
+  Users can reserve properties for specific dates, view their bookings, and manage check-ins and check-outs. It ensures availability is tracked and prevents double bookings.
+
+- **Payment Processing**  
+  Secure payment handling for completed bookings, including transaction tracking and confirmations. This supports financial trust and enables smooth monetization for hosts.
+
+- **Review System**  
+  Guests can leave reviews and ratings for properties after their stay. This builds credibility and helps future guests make informed booking decisions.
+
+- **API Documentation (REST & GraphQL)**  
+  Detailed API documentation for both REST and GraphQL ensures easy integration for frontend developers and third-party apps. It improves developer experience and project scalability.
+
+- **Database Optimization**  
+  Indexing and caching mechanisms improve data retrieval speed and reduce server load, ensuring a smooth user experience even under high traffic.
+
+---
+
+### 🔐 API Security
+
+- **Authentication & Authorization**  
+  JWT-based authentication will be used to verify user identity, while role-based authorization will ensure users can only access permitted resources. This protects sensitive data and enforces system boundaries.
+
+- **Rate Limiting**  
+  Limits the number of requests per IP/user to prevent abuse such as brute force attacks. This maintains service integrity and protects system resources.
+
+- **Input Validation & Sanitization**  
+  Prevents malicious data from being injected into the system (e.g., SQL Injection, XSS). This secures both client-side and server-side operations.
+
+- **HTTPS & Secure Headers**  
+  HTTPS will encrypt data in transit, while security headers like `Content-Security-Policy` and `X-Content-Type-Options` will guard against common web vulnerabilities.
+
+- **Payment Security**  
+  Ensures that transactions are processed securely, using third-party APIs (e.g., Stripe) with PCI compliance. This is vital to protect financial data and build trust.
+
+---
+
+### 🔄 CI/CD Pipeline
+
+- **What is CI/CD?**  
+  Continuous Integration (CI) and Continuous Deployment/Delivery (CD) automate the software development lifecycle by testing, building, and deploying code changes automatically. It helps detect bugs early and ensures smooth, frequent updates.
+
+- **Why it Matters**  
+  CI/CD improves code quality, speeds up development, reduces human error, and ensures consistent environments from development to production.
+
+- **Tools Used**  
+  - **GitHub Actions**: Automates testing, linting, and deployment workflows.  
+  - **Docker**: Ensures the application runs identically across development, testing, and production environments.  
+  - **Heroku/Vercel or AWS EC2**: Can be used for deploying the backend services.  
+  - **PostgreSQL**: Integrated as a managed database in the CI/CD process for migrations and schema checks.
+
+
